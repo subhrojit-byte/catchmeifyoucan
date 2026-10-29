@@ -1,0 +1,77 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+# Keep local Spring configuration private
+src/main/resources/application.properties
+src/main/resources/application-local.properties
+src/main/resources/application-secret.properties
+
+# Build output
+target/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+application-secret.properties
+
+# Logs and generated reports
+*.log
+/effective-pom
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated Python artifacts
+rl-agents/__pycache__/
+*.py[cod]
+
+# Temporary RL experiment outputs
+rl-agents/*smoke*.json
+rl-agents/*lifecycle*.json
+rl-agents/*backup*.json
+rl-agents/*console.txt
+rl-agents/*managed-run-*.json
+
+# Temporary RL runs and experiments
+/rl-agents/*smoke*.json
+/rl-agents/*lifecycle*.json
+/rl-agents/*backup*.json
+/rl-agents/*managed-run-*.json
+/rl-agents/*console.txt
+/rl-agents/__pycache__/
+# Large generated RL evaluation output
+/rl-agents/investigator-v3-multiepisode-20261026.json

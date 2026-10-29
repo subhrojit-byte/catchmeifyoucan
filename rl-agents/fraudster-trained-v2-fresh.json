@@ -1,0 +1,15 @@
+{
+  "compatibility": {
+    "legal_action_schema_version": "legal-actions-v1",
+    "policy_role": "fraudster",
+    "state_abstraction_version": "fraudster-state-abstraction-v2"
+  },
+  "discount_factor": 0.95,
+  "epsilon": 0.1,
+  "format": 1,
+  "learning_rate": 0.1,
+  "metadata": {},
+  "q_values": {},
+  "seed": 0,
+  "training_steps": 0
+}

@@ -1,0 +1,2364 @@
+{
+  "action_limit_episodes": 0,
+  "actions_attempted": {
+    "mean": 8,
+    "median": 8.0,
+    "observed_episode_count": 10
+  },
+  "average_episode_length": 8,
+  "completed_scenarios": 10,
+  "detection_metric_provenance": {
+    "evaluated_scenario_count": 10,
+    "investigator_observation_access": false,
+    "label_access_phase": "after every episode reached a terminal status",
+    "label_source": "read-only evaluator database"
+  },
+  "detection_metrics": {
+    "accuracy": 1.0,
+    "candidate_count": 20,
+    "candidate_population": "scenario source and target companies",
+    "evaluated_scenario_count": 10,
+    "f1": null,
+    "false_positive_rate": 0.0,
+    "flagged_decision_count": 0,
+    "fn": 0,
+    "fp": 0,
+    "metric_scope": "source_target_baseline",
+    "precision": null,
+    "recall": null,
+    "tn": 20,
+    "tp": 0
+  },
+  "discovered_candidate_metrics": {
+    "accuracy": 0.8888888888888888,
+    "candidate_count": 180,
+    "candidate_population": "unique scenario-company pairs available as legal FLAG_COMPANY choices immediately before an investigator decision",
+    "evaluated_scenario_count": 10,
+    "f1": 0.5,
+    "false_positive_rate": 0.0625,
+    "flagged_decision_count": 20,
+    "fn": 10,
+    "fp": 10,
+    "metric_scope": "discovered_candidate_population",
+    "precision": 0.5,
+    "recall": 0.5,
+    "tn": 150,
+    "tp": 10
+  },
+  "episodes": [
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 332,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 332,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 332,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 332,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 332,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 332,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 332,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 607
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 608
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 332,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 333,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 333,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 333,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 333,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 333,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 333,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 333,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 609
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 610
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 333,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 334,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 334,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 334,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 334,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 334,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 334,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 334,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 611
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 612
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 334,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 335,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 335,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 335,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 335,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 335,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 335,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 335,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 613
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 614
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 335,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 336,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 336,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 336,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 336,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 336,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 336,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 336,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 615
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 616
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 336,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 337,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 337,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 337,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 337,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 337,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 337,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 337,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 617
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 618
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 337,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 338,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 338,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 338,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 338,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 338,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 338,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 338,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 619
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 620
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 338,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 339,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 339,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 339,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 339,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 339,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 339,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 339,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 621
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 622
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 339,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 340,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 340,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 340,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 340,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 340,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 340,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 340,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 623
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 624
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 340,
+      "stop_reason": "scenario terminated"
+    },
+    {
+      "actions_attempted": 8,
+      "candidate_opportunities": [
+        {
+          "candidate_company_ids": [
+            303,
+            304
+          ],
+          "decision_index": 0,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 341,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            356,
+            383
+          ],
+          "decision_index": 1,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 341,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            320,
+            350,
+            383
+          ],
+          "decision_index": 2,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 341,
+          "step": 1
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            313,
+            320,
+            339,
+            350,
+            383,
+            386
+          ],
+          "decision_index": 3,
+          "investigator_actions_remaining": 3,
+          "scenario_id": 341,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            320,
+            339,
+            342,
+            350,
+            383,
+            386,
+            387
+          ],
+          "decision_index": 4,
+          "investigator_actions_remaining": 2,
+          "scenario_id": 341,
+          "step": 2
+        },
+        {
+          "candidate_company_ids": [
+            303,
+            304,
+            312,
+            313,
+            314,
+            320,
+            336,
+            339,
+            342,
+            350,
+            362,
+            369,
+            383,
+            386,
+            387,
+            388,
+            401
+          ],
+          "decision_index": 5,
+          "investigator_actions_remaining": 1,
+          "scenario_id": 341,
+          "step": 2
+        }
+      ],
+      "candidate_opportunities_complete": true,
+      "creation_succeeded": true,
+      "detection_metrics": {
+        "accuracy": 1.0,
+        "candidate_count": 2,
+        "f1": null,
+        "false_positive_rate": 0.0,
+        "flagged_decision_count": 0,
+        "fn": 0,
+        "fp": 0,
+        "metric_scope": "source_target_baseline",
+        "precision": null,
+        "recall": null,
+        "tn": 2,
+        "tp": 0
+      },
+      "discovered_candidate_metrics": {
+        "accuracy": 0.8888888888888888,
+        "candidate_count": 18,
+        "f1": 0.5,
+        "false_positive_rate": 0.0625,
+        "flagged_decision_count": 2,
+        "fn": 1,
+        "fp": 1,
+        "metric_scope": "discovered_candidate_population",
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 15,
+        "tp": 1
+      },
+      "episode_class": "completed",
+      "failure_stage": null,
+      "final_state": {
+        "financialObjectiveAchieved": true,
+        "id": 341,
+        "investigatorActionsRemaining": 0,
+        "positions": [
+          {
+            "amount": 0.0,
+            "company": {
+              "address": "Ahmedabad, Gujarat",
+              "ageInYears": 3,
+              "annualRevenue": 107506525.89,
+              "companyName": "Global Traders",
+              "id": 303,
+              "industry": "Healthcare",
+              "numberOfEmployees": 420,
+              "registrationDate": "2023-08-23",
+              "registrationNumber": "REG-18241"
+            },
+            "id": 625
+          },
+          {
+            "amount": 1000000.0,
+            "company": {
+              "address": "Hyderabad, Telangana",
+              "ageInYears": 29,
+              "annualRevenue": 69709007.64,
+              "companyName": "Pioneer Solutions",
+              "id": 304,
+              "industry": "Logistics",
+              "numberOfEmployees": 245,
+              "registrationDate": "1997-08-23",
+              "registrationNumber": "REG-82942"
+            },
+            "id": 626
+          }
+        ],
+        "sourceCompany": {
+          "address": "Ahmedabad, Gujarat",
+          "ageInYears": 3,
+          "annualRevenue": 107506525.89,
+          "companyName": "Global Traders",
+          "id": 303,
+          "industry": "Healthcare",
+          "numberOfEmployees": 420,
+          "registrationDate": "2023-08-23",
+          "registrationNumber": "REG-18241"
+        },
+        "status": "COMPLETED",
+        "step": 2,
+        "targetAmount": 1000000.0,
+        "targetCompany": {
+          "address": "Hyderabad, Telangana",
+          "ageInYears": 29,
+          "annualRevenue": 69709007.64,
+          "companyName": "Pioneer Solutions",
+          "id": 304,
+          "industry": "Logistics",
+          "numberOfEmployees": 245,
+          "registrationDate": "1997-08-23",
+          "registrationNumber": "REG-82942"
+        },
+        "turn": "INVESTIGATOR"
+      },
+      "fraudster_action_counts": {
+        "DIRECT_TRANSFER": 1,
+        "ROUTE_TRANSFER": 0,
+        "SPLIT_TRANSFER": 0,
+        "WAIT": 1,
+        "missing_action_type_count": 0,
+        "successful_action_count": 2,
+        "unrecognized_action_type_count": 0
+      },
+      "fraudster_action_types": [
+        "DIRECT_TRANSFER",
+        "WAIT"
+      ],
+      "initial_source_company_id": 303,
+      "initial_target_company_id": 304,
+      "investigator_evidence": {
+        "investigated_company_ids": [
+          303,
+          304,
+          312,
+          313
+        ],
+        "successful_director_investigations": 4,
+        "unique_company_director_relationships": 12,
+        "unique_connected_company_ids_discovered": 18,
+        "unique_director_company_connections": 27,
+        "unique_director_ids_discovered": 8
+      },
+      "scenario_id": 341,
+      "stop_reason": "scenario terminated"
+    }
+  ],
+  "executed_episode_count": 10,
+  "failed_scenarios": 0,
+  "financial_simulation_outcome": {
+    "metric_scope": "financial simulation outcome, not fraud-detection accuracy",
+    "objective_achieved_count": 10,
+    "objective_achievement_rate": 1.0,
+    "objective_observed_count": 10
+  },
+  "fraudster_action_counts_aggregate": {
+    "DIRECT_TRANSFER": 10,
+    "ROUTE_TRANSFER": 0,
+    "SPLIT_TRANSFER": 0,
+    "WAIT": 10,
+    "missing_action_type_count": 0,
+    "observed_episode_count": 10,
+    "successful_action_count": 20,
+    "unrecognized_action_type_count": 0
+  },
+  "incomplete_episodes": 0,
+  "investigator_evidence_aggregate": {
+    "observed_episode_count": 10,
+    "successful_director_investigations": 40,
+    "unique_company_director_relationships": 120,
+    "unique_connected_company_ids_discovered": 180,
+    "unique_director_company_connections": 270,
+    "unique_director_ids_discovered": 80
+  },
+  "median_episode_length": 8.0,
+  "objective_success_rate": 1.0,
+  "policy_name": "heuristic",
+  "requested_episode_count": 10,
+  "scenario_ids": [
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341
+  ],
+  "successfully_created_scenarios": 10
+}

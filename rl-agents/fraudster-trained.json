@@ -1,0 +1,22 @@
+{
+  "compatibility": {
+    "legal_action_schema_version": "legal-actions-v1",
+    "policy_role": "fraudster",
+    "state_abstraction_version": "state-abstraction-v1"
+  },
+  "discount_factor": 0.95,
+  "epsilon": 0.1,
+  "format": 1,
+  "learning_rate": 0.1,
+  "metadata": {},
+  "q_values": {
+    "[\"ACTIVE\",\"FRAUDSTER\",0,1,1,1,false]": {
+      "{\"action_type\":\"DIRECT_TRANSFER\",\"source_position_id\":141,\"targets\":null}": 1.0,
+      "{\"action_type\":\"DIRECT_TRANSFER\",\"source_position_id\":143,\"targets\":null}": 1.0,
+      "{\"action_type\":\"WAIT\",\"source_position_id\":141,\"targets\":[]}": 0.0,
+      "{\"action_type\":\"WAIT\",\"source_position_id\":143,\"targets\":[]}": 0.0
+    }
+  },
+  "seed": 7,
+  "training_steps": 2
+}

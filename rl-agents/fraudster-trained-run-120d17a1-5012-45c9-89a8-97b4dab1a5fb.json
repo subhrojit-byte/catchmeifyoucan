@@ -1,0 +1,55 @@
+{
+  "compatibility": {
+    "legal_action_schema_version": "legal-actions-v2",
+    "observation_reward_contract_version": "observation-reward-contract-v2",
+    "policy_role": "fraudster",
+    "private_shell_knowledge_features": "run-authorized-shell-intermediary-ids-v1",
+    "state_abstraction_version": "fraudster-state-abstraction-v4"
+  },
+  "discount_factor": 0.95,
+  "epsilon": 0.1,
+  "format": 1,
+  "learning_rate": 0.1,
+  "metadata": {
+    "training_provenance": {
+      "amount": 10000000.0,
+      "episodes": 1,
+      "max_actions": 60,
+      "scenario_id": 293,
+      "seed": 0,
+      "source_company_id": 303,
+      "target_company_id": 304,
+      "training_mode": "application_managed_fresh_existing_scenario"
+    }
+  },
+  "q_values": {
+    "[\"ACTIVE\",\"FRAUDSTER\",0,1,1,1,false,[0,0,0],1,0,0,[],4,[[1,3,2],[2,3,2],[3,3,2],[4,3,2]]]": {
+      "{\"action_type\":\"DIRECT_TRANSFER\",\"source_position_id\":526,\"targets\":null}": 0.6302494097246091,
+      "{\"action_type\":\"ROUTE_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"10000000.0\",\"destinationCompanyId\":320}]}": 0.0,
+      "{\"action_type\":\"ROUTE_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"10000000.0\",\"destinationCompanyId\":350}]}": 0.0,
+      "{\"action_type\":\"ROUTE_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"10000000.0\",\"destinationCompanyId\":356}]}": 0.0,
+      "{\"action_type\":\"ROUTE_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"10000000.0\",\"destinationCompanyId\":383}]}": 0.0,
+      "{\"action_type\":\"SPLIT_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"5000000.0\",\"destinationCompanyId\":320},{\"amount\":\"5000000.0\",\"destinationCompanyId\":350}]}": 0.0,
+      "{\"action_type\":\"SPLIT_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"5000000.0\",\"destinationCompanyId\":320},{\"amount\":\"5000000.0\",\"destinationCompanyId\":356}]}": 0.0,
+      "{\"action_type\":\"SPLIT_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"5000000.0\",\"destinationCompanyId\":320},{\"amount\":\"5000000.0\",\"destinationCompanyId\":383}]}": 0.0,
+      "{\"action_type\":\"SPLIT_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"5000000.0\",\"destinationCompanyId\":350},{\"amount\":\"5000000.0\",\"destinationCompanyId\":356}]}": 0.0,
+      "{\"action_type\":\"SPLIT_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"5000000.0\",\"destinationCompanyId\":350},{\"amount\":\"5000000.0\",\"destinationCompanyId\":383}]}": 0.0,
+      "{\"action_type\":\"SPLIT_TRANSFER\",\"source_position_id\":526,\"targets\":[{\"amount\":\"5000000.0\",\"destinationCompanyId\":356},{\"amount\":\"5000000.0\",\"destinationCompanyId\":383}]}": 0.0,
+      "{\"action_type\":\"WAIT\",\"source_position_id\":526,\"targets\":[]}": 0.0
+    },
+    "[\"ACTIVE\",\"FRAUDSTER\",1,2,1,3,true,[0,1,1],3,0,0,[],8,[[1,3,1],[1,3,2],[2,3,2],[2,3,2],[3,3,2],[3,3,2],[4,3,1],[4,3,2]]]": {
+      "{\"action_type\":\"WAIT\",\"source_position_id\":526,\"targets\":[]}": 0.6634204312890623
+    },
+    "[\"ACTIVE\",\"FRAUDSTER\",2,2,1,3,true,[0,2,1],3,0,0,[],8,[[1,3,1],[1,3,2],[2,3,2],[2,3,2],[3,3,2],[3,3,2],[4,3,1],[4,3,2]]]": {
+      "{\"action_type\":\"WAIT\",\"source_position_id\":526,\"targets\":[]}": 0.6983372960937498
+    },
+    "[\"ACTIVE\",\"FRAUDSTER\",3,2,1,3,true,[0,3,1],3,0,0,[],8,[[1,3,1],[1,3,2],[2,3,2],[2,3,2],[3,3,2],[3,3,2],[4,3,1],[4,3,2]]]": {
+      "{\"action_type\":\"WAIT\",\"source_position_id\":526,\"targets\":[]}": 0.7350918906249998
+    },
+    "[\"ACTIVE\",\"FRAUDSTER\",3,2,1,3,true,[0,4,1],3,0,0,[],8,[[1,3,1],[1,3,2],[2,3,2],[2,3,2],[3,3,2],[3,3,2],[4,3,1],[4,3,2]]]": {
+      "{\"action_type\":\"WAIT\",\"source_position_id\":526,\"targets\":[]}": 4.202358831409375
+    }
+  },
+  "seed": 0,
+  "training_steps": 10
+}
